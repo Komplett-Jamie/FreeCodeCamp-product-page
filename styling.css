@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body, html {
@@ -98,6 +99,8 @@ nav a:hover {
 .banner-image {
     background: radial-gradient(circle, #eee, var(--color-one));
 }
+
+
 h1 {
     text-align: center;
     font-family: 'Abel', sans-serif;
@@ -124,7 +127,7 @@ h3{
 }
 
 hr {
-    border-color: #C95C5C;
+    border-color: var(--color-two);
     width: 300px;
     margin: 0 auto;
 }
@@ -137,6 +140,15 @@ hr {
     color: var(--color-three);
     position:relative;
     margin-top: 20px;
+}
+
+#video-p    {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    color: var(--color-five);
 }
 
 #introduction {
@@ -171,4 +183,124 @@ hr {
 .feature-box-text  {
     color:black;
     font-size:16px;
+}
+
+@media only screen and (max-width: 600px) {
+    #feature-content {
+        flex-direction: column;
+        justify-content: center;
+        grid-row-gap:10px;
+        height:250px;
+        width:150px;
+    }
+}
+#video-div {
+    display:flex;
+    justify-content:center;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+#iframe-container {
+    width: 100%;
+    padding-bottom: 56%; 
+    height: 0;
+}
+
+.banner-image-two   {
+    background: radial-gradient(circle, #eee, var(--color-one));
+}
+
+#pricing {
+    margin: 80px 0px 0px 0px;
+}
+
+#pricing-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px 0;
+    grid-column-gap: 120px;
+
+}
+#pricing-boxes a{
+    text-decoration: none;
+}
+.price-box    {
+    padding:20px;
+    height:150px;
+    min-width:200px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--color-two);
+} 
+.pricing-text  {
+    color:black;
+    font-size:16px;
+    
+}
+
+.pricing-size   {
+    display: flex;
+    justify-content: center;
+}
+.pricing-cost   {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--color-five)
+}
+
+.hr-cost    {
+    width:150px;
+    margin-top: 15px;
+}
+
+#contact {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 160px;
+}
+
+#contact h3 {
+    padding: 80px 0px 0px 0px;
+}
+
+#contact form {
+    padding: 40px 0px 20px 0px;
+}
+
+#email {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #707070;
+    font-family: 'Open+Sans', sans-serif;
+    font-size: .7em;
+    color: #9A9A9A;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#submit {
+    margin-top:30px;
+    width:200px;
+    height:30px;
+    border-radius: 20px;
+    border: solid 1px;
+    border-color: #9A9A9A;
+    font-family: 'Open+Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: .7em;
+    letter-spacing: 3px;
+    color:black;
+    transition:0.7s ease
+}
+
+
+#submit:hover {
+    background-color:var(--color-two);
+    width:300px;
 }
